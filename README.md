@@ -2,4 +2,4 @@
 
 Sitio web del *CDU*
 
-Hecho por **"Paula Benitez"**
+Hecho por **Paula Benitez**
