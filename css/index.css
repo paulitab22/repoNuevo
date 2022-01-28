@@ -223,7 +223,14 @@ form {
     grid-template-columns: 580px;
     /* 8 filas */
     grid-template-rows: repeat(8, 250px);
-    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3"  "texto3" "foto4" "texto4";
+    grid-template-areas: "foto1"
+ "texto1"
+ "foto2"
+ "texto2"
+ "foto3" 
+ "texto3"
+ "foto4"
+ "texto4";
     background-color: rgba(241, 212, 80, 0.685);
     grid-row-gap: 10px; }
   .barbieri {
@@ -280,7 +287,8 @@ form {
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
-    grid-template-areas: "foto1 foto2" "foto3 foto4";
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4";
     background-color: #f7f7d7;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
@@ -297,11 +305,15 @@ form {
   #fotoCuatrogaleria {
     grid-area: foto4;
     width: 250px; }
-  .maquinaLitotricia1 {
+   .litotricia1 {
     width: 400px; }
-  .maquinaLitotricia2 {
+  .litotricia2 {
     width: 400px; }
-  .maquinaLitotricia3 {
+  .litotricia3 {
+    width: 400px; }
+  .litotricia4 {
+    width: 400px; }
+  .litotricia5 {
     width: 400px; }
   form {
     color: black;
@@ -363,7 +375,14 @@ form {
     grid-template-columns: 580px;
     /* 8 filas */
     grid-template-rows: repeat(8, 250px);
-    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3"  "texto3" "foto4" "texto4";
+    grid-template-areas: "foto1"
+ "texto1"
+ "foto2"
+ "texto2"
+ "foto3" 
+ "texto3"
+ "foto4"
+ "texto4";
     background-color: rgba(241, 212, 80, 0.685);
     grid-row-gap: 50px; }
   .barbieri {
@@ -420,7 +439,8 @@ form {
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
-    grid-template-areas: "foto1 foto2" "foto3 foto4";
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4";
     background-color: #f7f7d7;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
@@ -478,7 +498,10 @@ form {
     grid-template-rows: 100px 100px 100px 100px;
     /* 8 filas */
     grid-template-rows: repeat(4, 250px);
-    grid-template-areas: "foto1 foto2" "texto1 texto2" "foto3  foto4"  "texto3 texto4";
+    grid-template-areas: "foto1 foto2"
+ "texto1 texto2"
+ "foto3  foto4" 
+ "texto3 texto4";
     background-color: rgba(68, 56, 4, 0.685);
     grid-row-gap: 50px;
     grid-column-gap: 50px; }
@@ -537,7 +560,8 @@ form {
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
-    grid-template-areas: "foto1 foto2" "foto3 foto4";
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4";
     background-color: #f7f7d7;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
