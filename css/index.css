@@ -306,7 +306,7 @@ form {
     grid-area: foto4;
     width: 250px; }
 
-  #maquinaLitotricia{
+  #maquinadeLitotricia{
     display: grid;
     /* 1 columna */
     grid-template-columns: 580px;
