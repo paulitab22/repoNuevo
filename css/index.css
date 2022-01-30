@@ -224,13 +224,13 @@ form {
     /* 8 filas */
     grid-template-rows: repeat(8, 250px);
     grid-template-areas: "foto1"
- "texto1"
- "foto2"
- "texto2"
- "foto3" 
- "texto3"
- "foto4"
- "texto4";
+                         "texto1"
+                         "foto2"
+                         "texto2"
+                         "foto3" 
+                         "texto3"
+                         "foto4"
+                         "texto4";
     background-color: rgba(241, 212, 80, 0.685);
     grid-row-gap: 10px; }
   .barbieri {
@@ -288,7 +288,7 @@ form {
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
     grid-template-areas: "foto1 foto2"
- "foto3 foto4";
+                         "foto3 foto4";
     background-color: #f7f7d7;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
@@ -305,8 +305,8 @@ form {
   #fotoCuatrogaleria {
     grid-area: foto4;
     width: 250px; }
-  
-   #maquinaLitotricia{
+
+  #maquinaLitotricia{
     display: grid;
     /* 1 columna */
     grid-template-columns: 580px;
@@ -359,7 +359,7 @@ form {
     width: 400px; 
     height: 250px;
   }
-  
+
   form {
     color: black;
     width: 200px;
@@ -376,7 +376,8 @@ form {
     width: 100%;
     height: 100%;
     justify-content: center;
-    background-color: turquoise; } }
+    background-color: turquoise; } 
+  }
 
 /*Tablet Styles*/
 @media only screen and (min-width: 768px) {
