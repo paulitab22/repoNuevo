@@ -318,7 +318,9 @@ form {
                          "foto4"
                          "foto5";
     background-color: white;
-    grid-row-gap: 10px;
+    grid-row-gap: 15px;
+    grid-column-gap:15px; 
+    justify-content: space-evenly; 
   }
 
   .litotricia1 {
@@ -326,21 +328,21 @@ form {
     justify-self: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 400px; 
+    width: 300px; 
     height: 250px;
   }
   .litotricia2 {
     grid-area: foto2;
     justify-self: center;
     border-radius: 5px;
-    width: 400px; 
+    width: 300px; 
     height: 250px;
   }
   .litotricia3 {
     grid-area: foto3;
     justify-self: center;
     border-radius: 5px;
-    width: 400px; 
+    width: 300px; 
     height: 250px;
   }
   .litotricia4 {
@@ -348,7 +350,7 @@ form {
     justify-self: center;
     padding-bottom: 15px;
     border-radius: 5px;
-    width: 400px; 
+    width: 300px; 
     height: 250px;
   }
   .litotricia5 {
@@ -356,7 +358,7 @@ form {
     justify-self: center;
     padding-bottom: 15px;
     border-radius: 5px;
-    width: 400px; 
+    width: 300px; 
     height: 250px;
   }
 
