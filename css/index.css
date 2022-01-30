@@ -306,8 +306,8 @@ form {
     grid-area: foto4;
     width: 250px; }
   
- #maquinaLitotricia{
-    display: flex;
+   #maquinaLitotricia{
+    display: grid;
     /* 1 columna */
     grid-template-columns: 580px;
     /* 5 filas */
@@ -327,18 +327,21 @@ form {
     padding-top: 20px;
     border-radius: 5px;
     width: 400px; 
+    height: 250px;
   }
   .litotricia2 {
     grid-area: foto2;
     justify-self: center;
     border-radius: 5px;
     width: 400px; 
+    height: 250px;
   }
   .litotricia3 {
     grid-area: foto3;
     justify-self: center;
     border-radius: 5px;
     width: 400px; 
+    height: 250px;
   }
   .litotricia4 {
     grid-area: foto4;
@@ -346,6 +349,7 @@ form {
     padding-bottom: 15px;
     border-radius: 5px;
     width: 400px; 
+    height: 250px;
   }
   .litotricia5 {
     grid-area: foto5;
@@ -353,6 +357,7 @@ form {
     padding-bottom: 15px;
     border-radius: 5px;
     width: 400px; 
+    height: 250px;
   }
   
   form {
