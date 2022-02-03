@@ -176,6 +176,12 @@ form {
     
   .nombreUno hover{
       color: black !important;}
+
+  h3{
+    color: black;
+    font-size: 13px;
+    font-family: 'roboto';
+  }
   main {
     height: 100%; }
 
@@ -303,6 +309,12 @@ form {
       border: solid 1px black;
       font-family: 'Libre Franklin', sans-serif;
       font-size: 17px; }
+
+  .contacto h1{
+    color: black;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
   #maquinadeLitotricia{
     display: grid;
@@ -526,6 +538,12 @@ form {
   #fotoCuatrogaleria {
     grid-area: foto4;
     width: 250px; } 
+
+  .contacto h1{
+    color: black;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
     #maquinadeLitotricia{
       display: grid;
       /* 2 columnas */
