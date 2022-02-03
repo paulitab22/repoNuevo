@@ -273,100 +273,86 @@ main{
     .listaNoordenada li {
         justify-content: center;
         color: black;
-        list-style-type: disc;
+        list-style-type: circle;
         margin: 0px;
         padding: 10px;
-        display: block;
-        list-style-type: circle;
         align-items: center;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         color: black; }
 
-    #urologos{
-        display: grid;
+    #urologos {
+    display: grid;
     /* 1 columna */
-        grid-template-columns: 580px;
+    grid-template-columns: 580px;
     /* 8 filas */
-        grid-template-rows: repeat(8,250px);
-        grid-template-areas: "foto1"
-                             "texto1"
-                             "foto2"
-                             "texto2"
-                             "foto3" 
-                             "texto3"
-                             "foto4"
-                             "texto4";
-        background-color:rgba(241, 212, 80, 0.685);
-        grid-row-gap:10px;
-    }
+    grid-template-rows: repeat(8, 250px);
+    grid-template-areas: "foto1"
+                         "texto1"
+                         "foto2"
+                         "texto2"
+                         "foto3" 
+                         "texto3"
+                         "foto4"
+                         "texto4";
+    background-color: white;
+    grid-row-gap: 10px; 
+    justify-content: space-evenly;}
 
-    .barbieri{
-        grid-area: foto1;
-        justify-self: center;
-        padding-top: 20px;
-        border-radius: 5px;
-        width: 300px;
-        height: 250px;
-    }
-
-    .texto1{
-        grid-area: texto1;
-        justify-self: center;
-        margin-top: 15%;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
-    
-    .benitez{
-        grid-area: foto2;
-        justify-self: center;
-        border-radius: 5px;
-        width: 300px;
-        height: 250px;
-    }
-
-    .texto2{
-        grid-area: texto2;
-        justify-self: center;
-        margin-top: 55px;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
-    
-    .millan{
-        grid-area: foto3;
-        justify-self: center;
-        border-radius: 5px;
-        width: 300px;
-        height: 250px;
-    }
-
-    .texto3{
-        grid-area:texto3;
-        justify-self: center;
-        margin-top: 55px;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
-    
-    .dallosso{
-        grid-area: foto4;
-        justify-self: center;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 300px;
-        height: 250px;
-    }
-
-    .texto4{
-        grid-area: texto4;
-        justify-self: end;
-        margin-top: 55px;
-        height: 55px;
-        background-color: rgb(255, 255, 255);
-      
-    }
+  .barbieri {
+    grid-area: foto1;
+    justify-self: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto1 {
+    grid-area: texto1;
+    justify-self: center;
+    margin-top: 15%;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .benitez {
+    grid-area: foto2;
+    justify-self: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto2 {
+    grid-area: texto2;
+    justify-self: center;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .millan {
+    grid-area: foto3;
+    justify-self: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto3 {
+    grid-area: texto3;
+    justify-self: center;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .dallosso {
+    grid-area: foto4;
+    justify-self: center;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto4 {
+    grid-area: texto4;
+    justify-self: end;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
 
     #galeriaInicio{
         display: grid;
@@ -374,7 +360,7 @@ main{
         grid-template-rows: 300px 300px;
         grid-template-areas: "foto1 foto2"
                              "foto3 foto4";
-        background-color: rgb(247, 247, 215);
+        background-color: white;
         grid-column-gap: 15px;
         grid-row-gap:15px;
         justify-content: space-evenly;
@@ -401,6 +387,12 @@ main{
         width: 250px;
     }
 
+
+    h3{
+        color: black;
+        font-size: 10px;
+        font-family: 'roboto';
+      }
     #maquinadeLitotricia{
         display: grid;
         /* 1 columna */
@@ -456,7 +448,28 @@ main{
         width: 300px; 
         height: 250px;
       }
-
+      table {
+        background-color: wheat;
+        text-align: left;
+        border-collapse: collapse; }
+   
+     th {
+        color: black;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 22px; }
+   
+     td {
+         color: black;
+         border: solid 1px black;
+         font-family: 'Libre Franklin', sans-serif;
+         font-size: 17px; }
+   
+     .contacto h1{
+       color: black;
+       font-size: 17px;
+       font-family: 'Montserrat', sans-serif;
+     }
+   
       form{
         color: black;
         width: 200px;
@@ -546,99 +559,80 @@ main{
     .listaNoordenada li {
         justify-content: center;
         color: black;
-        list-style-type: disc;
+        list-style-type: circle;
         margin: 0px;
         padding: 10px;
-        display: block;
-        list-style-type: circle;
         align-items: center;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         color: black; }
 
-    #urologos{
-        display: grid;
+    #urologos {
+    display: grid;
     /* 2 columnas */
-        grid-template-columns: 580px 580px;
-        grid-template-rows: 100px 100px 100px 100px;
-    /* 8 filas */
-        grid-template-rows: repeat(4,250px);
-        grid-template-areas: "foto1 foto2"
-                             "texto1 texto2"
-                             "foto3  foto4" 
-                             "texto3 texto4";
-        background-color:rgba(68, 56, 4, 0.685);
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
-    }
-
-    .barbieri{
-        grid-area: foto1;
-        justify-self: center;
-        padding-top: 50px;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .texto1{
-        grid-area: texto1;
-        justify-self: center;
-        margin-top: 15%;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px;
+    /* 4 filas */
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "foto1 foto2"
+                         "texto1 texto2"
+                         "foto3  foto4" 
+                         "texto3 texto4";
+    background-color: white;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px; 
+    justify-content: space-evenly;}
     
-    .benitez{
-        grid-area: foto2;
-        justify-self: center;
-        padding-top: 50px;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .texto2{
-        grid-area: texto2;
-        justify-self: center;
-        margin-top: 15%;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
-    
-    .millan{
-        grid-area: foto3;
-        justify-self: center;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .texto3{
-        grid-area:texto3;
-        justify-self: center;
-        margin-top: 55px;
-        height: 55px;
-        background-color:  rgb(255, 255, 255);
-    }
-    
-    .dallosso{
-        grid-area: foto4;
-        justify-self: center;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .texto4{
-        grid-area: texto4;
-        justify-self: end;
-        margin-top: 55px;
-        height: 55px;
-        background-color: rgb(255, 255, 255);
-      
-    }
+  .barbieri {
+    grid-area: foto1;
+    justify-self: center;
+    padding-top: 50px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px; }
+  .texto1 {
+    grid-area: texto1;
+    justify-self: center;
+    margin-top: 15%;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .benitez {
+    grid-area: foto2;
+    justify-self: center;
+    padding-top: 50px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px; }
+  .texto2 {
+    grid-area: texto2;
+    margin-top: 15%;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .millan {
+    grid-area: foto3;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px; }
+  .texto3 {
+    grid-area: texto3;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .dallosso {
+    grid-area: foto4;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px; }
+  .texto4 {
+    grid-area: texto4;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
 
     #galeriaInicio{
         display: grid;
@@ -675,10 +669,10 @@ main{
 
     #maquinadeLitotricia{
         display: grid;
-        /* 2 columna */
-        grid-template-columns: 580px 580px;
+        /* 2 columnas */
+        grid-template-columns: 250px 250px;
         /* 3 filas */
-        grid-template-rows: repeat(3, 250px);
+        grid-template-rows: repeat(5, 250px);
         grid-template-areas: "foto1 foto2"
                              "foto3 foto4"
                              "foto5";
@@ -699,6 +693,7 @@ main{
       .litotricia2 {
         grid-area: foto2;
         justify-self: center;
+        margin-top: 5px;
         border-radius: 5px;
         width: 300px; 
         height: 250px;
@@ -706,6 +701,7 @@ main{
       .litotricia3 {
         grid-area: foto3;
         justify-self: center;
+        margin-top: 5px;
         border-radius: 5px;
         width: 300px; 
         height: 250px;
@@ -713,6 +709,7 @@ main{
       .litotricia4 {
         grid-area: foto4;
         justify-self: center;
+        margin-top: 5px;
         padding-bottom: 15px;
         border-radius: 5px;
         width: 300px; 
@@ -721,6 +718,7 @@ main{
       .litotricia5 {
         grid-area: foto5;
         justify-self: center;
+        
         padding-bottom: 15px;
         border-radius: 5px;
         width: 300px; 
@@ -736,6 +734,25 @@ main{
         padding-left: 15px;
         margin-left: 15px;
         margin-top: 15px;
+    }
+
+    table{
+        background-color: wheat;
+        text-align: left;
+        border-collapse: collapse;
+    }
+    
+    th{
+        color:black;
+        font-family:'Libre Franklin', sans-serif;
+        font-size: 22px;
+    }
+    
+    td{
+        color: black;
+        border: solid 1px black;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 17px;
     }
     
 }
