@@ -202,6 +202,12 @@ form {
     grid-area: foto4;
     width: 250px; }
 
+  h3{
+    color: black;
+    font-size: 10px;
+    font-family: 'roboto';
+  }
+
   #urologos {
     display: grid;
     /* 1 columna */
@@ -216,8 +222,10 @@ form {
                          "texto3"
                          "foto4"
                          "texto4";
-    background-color: #f7f7d7;
-    grid-row-gap: 10px; }
+    background-color: white;
+    grid-row-gap: 10px; 
+    justify-content: space-evenly;}
+
   .barbieri {
     grid-area: foto1;
     justify-self: center;
@@ -415,20 +423,29 @@ form {
       color: black !important;}
   .nombreUno hover{
       color: rgb(75, 73, 73) !important;}
+
+    h3{
+    color: black;
+    font-size: 15px;
+    font-family: 'roboto';
+  }
+
   #urologos {
     display: grid;
     /* 2 columnas */
     grid-template-columns: 250px 250px;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: 250px 250px 250px 250px;
     /* 4 filas */
     grid-template-rows: repeat(4, 250px);
     grid-template-areas: "foto1 foto2"
                          "texto1 texto2"
                          "foto3  foto4" 
                          "texto3 texto4";
-    background-color: #7d3cb3;
+    background-color: white;
     grid-row-gap: 15px;
-    grid-column-gap: 15px; }
+    grid-column-gap: 15px; 
+    justify-content: space-evenly;}
+    
   .barbieri {
     grid-area: foto1;
     justify-self: center;
