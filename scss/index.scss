@@ -47,6 +47,7 @@ nav{
 
     ul{
         display: flex;
+        justify-content: center;
     }
     
     .navbar-nav{
@@ -208,11 +209,11 @@ footer{
     .piedepagina{
         display: flex;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 10px;
+        font-size: 23px;
         width: 100%;
         height: 100%;
         justify-content: center;
-        background-color: turquoise;
+        background-color: rgb(77, 74, 74);
 }
 }
 
@@ -491,7 +492,7 @@ main{
         width: 100%;
         height: 100%;
         justify-content: center;
-        background-color: turquoise;
+        background-color: rgb(77, 74, 74);
     }
 }
 
@@ -524,7 +525,7 @@ nav{
     
     ul{
         display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
 
     .navbar-nav{
@@ -755,5 +756,17 @@ main{
         font-size: 17px;
     }
     
+}
+
+/*PIE DE PÁGINA*/
+
+.piedepagina{
+    display: flex;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 23px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgb(77, 74, 74);
 }
 }
