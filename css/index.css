@@ -280,11 +280,9 @@ form {
   .listaNoordenada li {
     justify-content: center;
     color: black;
-    list-style-type: disc;
+    list-style-type: circle;
     margin: 0px;
     padding: 10px;
-    display: block;
-    list-style-type: circle;
     align-items: center;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
@@ -317,7 +315,7 @@ form {
                          "foto3"
                          "foto4"
                          "foto5";
-    background-color: #f7f7d7;
+    background-color: white;
     grid-row-gap: 15px;
     grid-column-gap:15px; 
     justify-content: space-evenly; 
@@ -496,11 +494,9 @@ form {
   .listaNoordenada li {
     justify-content: center;
     color: black;
-    list-style-type: disc;
+    list-style-type: circle;
     margin: 0px;
     padding: 10px;
-    display: block;
-    list-style-type: circle;
     align-items: center;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
@@ -533,13 +529,13 @@ form {
     #maquinadeLitotricia{
       display: grid;
       /* 2 columnas */
-      grid-template-columns: 580px 580px;
+      grid-template-columns: 250px 250px;
       /* 3 filas */
       grid-template-rows: repeat(5, 250px);
       grid-template-areas: "foto1 foto2"
                            "foto3 foto4"
                            "foto5";
-      background-color: #f7f7d7;
+      background-color: white;
       grid-row-gap: 15px;
       grid-column-gap:15px; 
       justify-content: space-evenly; 
@@ -606,3 +602,4 @@ form {
       color: white;
       background-color: rgb(61, 63, 63); } 
     }
+  
