@@ -679,7 +679,6 @@ main{
     
       .litotricia1 {
         grid-area: foto1;
-        justify-self: center;
         padding-top: 20px;
         border-radius: 5px;
         width: 300px; 
@@ -687,7 +686,6 @@ main{
       }
       .litotricia2 {
         grid-area: foto2;
-        justify-self: center;
         margin-top: 5px;
         border-radius: 5px;
         width: 300px; 
@@ -695,7 +693,6 @@ main{
       }
       .litotricia3 {
         grid-area: foto3;
-        justify-self: center;
         margin-top: 5px;
         border-radius: 5px;
         width: 300px; 
@@ -703,7 +700,6 @@ main{
       }
       .litotricia4 {
         grid-area: foto4;
-        justify-self: center;
         margin-top: 5px;
         padding-bottom: 15px;
         border-radius: 5px;
@@ -712,8 +708,6 @@ main{
       }
       .litotricia5 {
         grid-area: foto5;
-        justify-self: center;
-        
         padding-bottom: 15px;
         border-radius: 5px;
         width: 300px; 
