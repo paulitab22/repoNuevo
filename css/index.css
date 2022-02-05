@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  box-sizing: border-box;}
 
 header {
   background-color: white;
@@ -31,10 +32,9 @@ img {
   margin-bottom: 1%;
   margin-right: 1%; }
 
-.d-block w-100 img{
-  width: 50%;
-  height: 50%;
- }
+.imagenApaisada {
+  width: 98%;
+  height: 98%; }
 
 p {
   font-family: 'Libre Franklin', sans-serif;
@@ -42,6 +42,18 @@ p {
   color: black;
   padding: 5px;
   background-color: #f7f7d7; }
+
+.title-1{
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+}
+
+.parrafo-1{
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+}
 
 .textoUno {
   font-family: 'Libre Franklin', sans-serif;
@@ -179,48 +191,11 @@ form {
   .nombreUno hover{
       color: black !important;}
 
+
+
+
   main {
     height: 100%; }
-
-
-  /*Titulos varios*/
-
-  .title1 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-  }
-
-  .subtitle1 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 10px;
-  }
-
-  .title2 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-  }
-
-  .subtitle2 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 10px;
-  }
-
-  .title3 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-  }
-
-  .subtitle3 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 10px;
-  }
-
 
   #galeriaInicio {
     display: grid;
@@ -470,62 +445,42 @@ form {
   .nombreUno hover{
       color: rgb(75, 73, 73) !important;}
 
-  /*Titulos varios*/
+  /*CARROUSEL*/
 
-  .title1 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-  }
+.carousel.item{
+  display:block;
+  height: 300px;
+  background: black;
+  opacity: 0.7;
+}
 
-  .subtitle1 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 12px;
-  }
+.carousel-caption{
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
-  .title2 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-  }
+.corousel-button button-1{
+  margin-top:30px;
+  background-color: rgb(8, 153, 45);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+  margin-right: 15px;
+}
 
-  .subtitle2 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 12px;
-  }
+.corousel-button button-2{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+}
 
-  .title3 h2{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-  }
-
-  .subtitle3 p{
-    color:rgb(56, 58, 56);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 12px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.corousel-button button-3{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+}
 
 
   #urologos {
