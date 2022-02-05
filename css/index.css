@@ -375,15 +375,7 @@ form {
     width: 300px; 
     height: 250px;
   }
-  .litotricia5 {
-    grid-area: foto5;
-    justify-self: center;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    width: 300px; 
-    height: 250px;
-  }
-
+ 
   form {
     color: black;
     width: 200px;
@@ -475,11 +467,8 @@ form {
   font-family: 'Work Sans', sans-serif;
 }
 
-.corousel-button button-3{
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  font-family: 'Work Sans', sans-serif;
+.d-block img{
+  width: 500px;
 }
 
 
@@ -635,13 +624,7 @@ form {
       width: 300px; 
       height: 250px;
     }
-    .litotricia5 {
-      grid-area: foto5;  
-      padding-bottom: 15px;
-      border-radius: 5px;
-      width: 300px; 
-      height: 250px;
-    }
+
     form {
       color: black;
       width: 200px;
