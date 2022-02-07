@@ -200,21 +200,6 @@ h2 {
   background-color: rgba(241, 212, 80, 0.685);
   color: black; }
 
-table {
-  background-color: wheat;
-  text-align: left;
-  border-collapse: collapse; }
-
-th {
-  color: black;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 22px; }
-
-td {
-  color: black;
-  border: solid 1px black;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 17px; }
 
 form {
   color: black;
@@ -394,23 +379,7 @@ form {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
     color: black; }
-  
-  
-  table {
-     background-color: wheat;
-     text-align: left;
-     border-collapse: collapse; }
 
-  th {
-     color: black;
-     font-family: 'Libre Franklin', sans-serif;
-     font-size: 22px; }
-
-  td {
-      color: black;
-      border: solid 1px black;
-      font-family: 'Libre Franklin', sans-serif;
-      font-size: 17px; }
 
   .contacto h1{
     color: black;
@@ -681,16 +650,6 @@ form {
       width: 300px; 
       height: 250px;
     }
-
-    form {
-      color: black;
-      width: 200px;
-      height: 300px;
-      border: 1px solid black;
-      padding-bottom: 100px;
-      padding-left: 15px;
-      margin-left: 15px;
-      margin-top: 15px; }
     .piedepagina {
       display: flex;
       font-family: 'Libre Franklin', sans-serif;
@@ -701,4 +660,3 @@ form {
       color: white;
       background-color: rgb(61, 63, 63); } 
     }
-  
