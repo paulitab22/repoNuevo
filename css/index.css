@@ -85,6 +85,66 @@ p {
   font-size: 10px;
 }
 
+    /*INFORMACIÓN*/ 
+
+.practicas{
+  display: flex;
+  background: #e2f3a5;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 10px; }
+
+.practicas hr {
+  color: #ffff;
+  width: 15%;
+  height: 2px;
+  margin-bottom: 100px; }
+
+.practicas-title{
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+  align-self: center; }
+
+.practicas__card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.practicas__card{
+  width: 30%;
+  background: #fcfcfc;
+  box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
+  transition: 2s; }
+
+.practicas_card:hover{
+  transform: scale(1.05);}
+
+.practicas img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+.practicas__card__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.practicas__card__content b {
+  align-self: flex-end;
+  font-size: 20px; }
+
+.practicas__card__foto {
+  color: #6e6e6e;
+  padding: 15px 0px; }
+
+.practicas__card__button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px; }
+
 .textoUno {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 17px;
