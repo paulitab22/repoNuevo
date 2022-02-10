@@ -1,0 +1,198 @@
+/*INFORMACIÓN*/
+
+/*INFORMACIÓN DE PRÁCTICAS REALIZADAS*/
+
+.practicas{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 10px; 
+  
+        & hr {
+             color: #198f89;
+             width: 15%;
+             height: 2px;
+             margin-bottom: 100px; }
+  
+        &-title{
+             color: black;
+             font-weight: 500;
+             font-size: 40px;
+             align-self: center; }
+  
+        &__card__container {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+             width: 100%; }
+  
+        &__card{
+             width: 30%;
+             background: white;
+             box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
+             transition: 2s; }
+  
+        &__card:hover{
+             transform: scale(1.05);}
+  
+        & img {
+              width: 100%;
+              height: 300px;
+              object-fit: cover; }
+  
+        &__card__content {
+              padding: 20px;
+              display: flex;
+              flex-direction: column; }
+  
+        &__card__content b {
+              align-self: flex-end;
+              font-size: 20px; }
+  
+        &__card__foto {
+             color: black;
+             padding: 15px 0px; }
+  
+        &__card__button {
+             display: flex;
+             align-items: center;
+             justify-content: end;
+             padding: 20px; }
+
+        .about-info {
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;  }
+
+        .about-tecnologia{
+             background-color: #eee;
+             display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px; }
+              
+        .about hr {
+            color:#222424;
+            width: 10%;
+            height: 2px;
+            align-self: center; }
+              
+}
+
+img{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+
+    p{ 
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 17px;
+        color: black;
+        padding: 5px;
+    }
+
+/*CARROUSEL*/
+
+    .carousel.item{
+        display:flex;
+        height: 200px;
+  }
+  
+    .carousel-caption{
+        padding-left: 50px;
+        padding-right: 50px;
+  }
+  
+    .corousel-button button-1{
+        margin-top:30px;
+        background-color: rgb(8, 153, 45);
+        color: white;
+        border-radius: 5px;
+        font-family: 'Work Sans', sans-serif;
+        margin-right: 15px;
+  }
+  
+    .corousel-button button-2{
+         background-color: white;
+         color: black;
+         border-radius: 5px;
+         font-family: 'Work Sans', sans-serif;
+  }
+  
+    .d-block img{
+        width: 100px;
+  }
+
+    .title-1{
+        align-items: flex-start;
+        color: black;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 30px;
+}
+
+    .parrafo-1{
+        align-items: flex-start;
+        color: black;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+}  
+}
+    
+
+main{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+    h2{
+        color: black;
+        font-family: 'Alata', sans-serif;
+        font-size: 20px;
+        padding: 0%;
+        padding-top: 27px;
+        text-align: center; 
+    }
+
+    .title-nosotros{
+        color: $titleColor;
+        font-size: 40px;
+        align-self: center; }
+        
+    .title-contacto{
+        @extend .title-nosotros;
+        color: $titleColor;}
+
+    .title-tecnologias{
+        @extend .title-nosotros;
+        color: $titleColor; 
+}
+    .textoUno{
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 17px;
+        color: black;
+        padding: 5px;
+        background-color: rgb(247, 247, 215);
+    }
+    .textoDos{
+        font-family: 'Libre Franklin', sans-serif;
+        color: black;
+        font-size: 17px;
+    }
+    
+    form{
+        color: black;
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+        padding-bottom: 100px;
+        padding-left: 15px;
+        margin-left: 15px;
+        margin-top: 15px;}
+    
+}
