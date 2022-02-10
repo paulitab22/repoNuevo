@@ -1,10 +1,15 @@
 @import "variables.scss";
+@import "header.scss";
+@import "informacion.scss";
+@import "nav.scss";
 
 
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*CUERPO*/
@@ -20,64 +25,8 @@ header{
         color: black;
         text-align:left;  
     }
-}
+  }
 
-
-/*NAVEGACION*/
-
-nav{
-    display: flex;
-    justify-content: center;
-    font-family: 'Inria Sans', sans-serif;
-    border-radius: 3px;
-    border-top: solid 2px gray;
-    border-right: solid 2px gray;
-    border-bottom: solid 2px gray;
-    border-left: solid 2px gray;
-    background-color: rgb(247, 247, 215); 
-    color: black;
-
-    .navbar{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(247, 247, 215);
-        display: flex;
-        justify-content: center;
-    }
-
-    ul{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navbar-nav{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        list-style: none;
-    }
-    
-    .navbar-nav li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    a{
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    .nombreUno{
-        color: black !important;
-      }
-      
-      .nombreUno hover{
-        color: rgb(75, 73, 73) !important;
-      }
-}
 
 /*INFORMACIÓN*/
 
@@ -87,19 +36,58 @@ img{
     margin-bottom: 1%;
     margin-right: 1%;
 
-
-    .imagenApaisada{
-        width: 98%;
-        height: 98%;}
-
-
     p{ 
         font-family: 'Libre Franklin', sans-serif;
         font-size: 17px;
         color: black;
         padding: 5px;
-        background-color: rgb(247, 247, 215);
     }
+
+/*CARROUSEL*/
+
+    .carousel.item{
+        display:flex;
+        height: 200px;
+  }
+  
+    .carousel-caption{
+        padding-left: 50px;
+        padding-right: 50px;
+  }
+  
+    .corousel-button button-1{
+        margin-top:30px;
+        background-color: rgb(8, 153, 45);
+        color: white;
+        border-radius: 5px;
+        font-family: 'Work Sans', sans-serif;
+        margin-right: 15px;
+  }
+  
+    .corousel-button button-2{
+         background-color: white;
+         color: black;
+         border-radius: 5px;
+         font-family: 'Work Sans', sans-serif;
+  }
+  
+    .d-block img{
+        width: 100px;
+  }
+
+    .title-1{
+        align-items: flex-start;
+        color: black;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 30px;
+}
+
+    .parrafo-1{
+        align-items: flex-start;
+        color: black;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+}  
 }
     
 
@@ -117,72 +105,6 @@ main{
         text-align: center; 
     }
     
-    .subtitulo1{
-        font-family: 'Alata', sans-serif;
-        font-size: 25px;
-        background-color: rgba(241, 212, 80, 0.685) ;
-        color:black;
-    }
-    
-    .subtitulo2{
-        font-family: 'Alata', sans-serif;
-        font-size: 25px;
-        background-color: rgba(241, 212, 80, 0.685) ;
-        color:black;
-    }
-    
-    .subtitulo3{
-        font-family: 'Alata', sans-serif;
-        font-size: 25px;
-        background-color: rgba(241, 212, 80, 0.685) ;
-        color:black;
-    }
-    
-    .subtitulo4{
-        font-family: 'Alata', sans-serif;
-        font-size: 25px;
-        background-color: rgba(241, 212, 80, 0.685) ;
-        color:black;
-    }
-
-    .textoUno{
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 17px;
-        color: black;
-        padding: 5px;
-        background-color: rgb(247, 247, 215);
-    }
-
-    .textoDos{
-        font-family: 'Libre Franklin', sans-serif;
-        color: black;
-        font-size: 17px;
-    }
-
-    .textoTres{
-       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-       color: black;
-       font-size: 17px;
-
-    table{
-        background-color: wheat;
-        text-align: left;
-        border-collapse: collapse;
-    }
-    
-    th{
-        color:black;
-        font-family:'Libre Franklin', sans-serif;
-        font-size: 22px;
-    }
-    
-    td{
-        color: black;
-        border: solid 1px black;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 17px;
-    }
-    
     form{
         color: black;
         width: 200px;
@@ -193,29 +115,40 @@ main{
         margin-left: 15px;
         margin-top: 15px;}
 }
-}
+
 
 /*PIE DE PÁGINA*/
 
+
+@mixin infodelFooter($width, $height, $bgColor){
+  width: $width;
+  height: $height;
+  background-color: $bgColor;
+}
+  
 footer{
-    background-color: rgb(155, 148, 148);
-   
-    #piepag{
-         width: 100%;
-         height: 50px;
-         align-content: center;}
+  @include infodelFooter( 50px , 150% , green); 
+}
 
+  .container__redes{
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      align-items: center;
+      background-color: #706e6e; 
+}
 
-    .piedepagina{
-        display: flex;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 23px;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        background-color: rgb(77, 74, 74);
+    .container__redes a img{
+      width: 32px;
+      height: auto;
+      margin: 15px 15px; }
+
+    .container__redes a img hover {
+      opacity: 25%;
+      transition: all 0.2s ease; 
 }
 }
+
 
 
 /*Mobile Styles*/
@@ -237,7 +170,7 @@ nav{
     background-color: rgb(247, 247, 215); 
     color: black;
     
-    .navbar{
+    &bar{
         width: 100%;
         height: 100%;
         background-color: rgb(247, 247, 215);
@@ -250,14 +183,14 @@ nav{
         flex-direction: column;
     }
 
-    .navbar-nav{
+    &bar-nav{
         display: flex;
         width: 100%;
         height: 100%;
         list-style: none;
     }
     
-    .navbar-nav li{
+    &bar-nav li{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -270,17 +203,6 @@ nav{
     
 main{
     height: 100%;
-    
-    .listaNoordenada li {
-        justify-content: center;
-        color: black;
-        list-style-type: circle;
-        margin: 0px;
-        padding: 10px;
-        align-items: center;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 15px;
-        color: black; }
 
     #urologos {
     display: grid;
@@ -354,127 +276,95 @@ main{
     height: 55px;
     color: black;
     background-color: #f7f7d7; }
-
-    #galeriaInicio{
-        display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto4";
-        background-color: white;
-        grid-column-gap: 15px;
-        grid-row-gap:15px;
-        justify-content: space-evenly;
-        
-    }
-
-    #fotoUnogaleria{
-        grid-area: foto1;
-        width: 250px;
-    }
-
-    #fotoDosgaleria{
-        grid-area: foto2;
-        width: 250px;
-    }
-
-    #fotoTresgaleria{
-        grid-area: foto3;
-        width: 250px;
-    }
-
-    #fotoCuatrogaleria{
-        grid-area: foto4;
-        width: 250px;
-    }
     
-    #maquinadeLitotricia{
-        display: grid;
-        /* 1 columna */
-        grid-template-columns: 580px;
-        /* 5 filas */
-        grid-template-rows: repeat(5, 250px);
-        grid-template-areas: "foto1"
-                             "foto2"
-                             "foto3"
-                             "foto4"
-                             "foto5";
-        background-color: white;
-        grid-row-gap: 15px;
-        grid-column-gap:15px; 
-        justify-content: space-evenly; 
-      }
-    
-      .litotricia1 {
-        grid-area: foto1;
-        justify-self: center;
-        padding-top: 20px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia2 {
-        grid-area: foto2;
-        justify-self: center;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia3 {
-        grid-area: foto3;
-        justify-self: center;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia4 {
-        grid-area: foto4;
-        justify-self: center;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia5 {
-        grid-area: foto5;
-        justify-self: center;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      table {
-        background-color: wheat;
-        text-align: left;
-        border-collapse: collapse; }
+   #urologos {
+    display: grid;
+    /* 1 columna */
+    grid-template-columns: 580px;
+    /* 8 filas */
+    grid-template-rows: repeat(8, 250px);
+    grid-template-areas: "foto1"
+                         "texto1"
+                         "foto2"
+                         "texto2"
+                         "foto3" 
+                         "texto3"
+                         "foto4"
+                         "texto4";
+    background-color: white;
+    grid-row-gap: 10px; 
+    justify-content: space-evenly;}
+
+  .barbieri {
+    grid-area: foto1;
+    justify-self: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto1 {
+    grid-area: texto1;
+    justify-self: center;
+    margin-top: 15%;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .benitez {
+    grid-area: foto2;
+    justify-self: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto2 {
+    grid-area: texto2;
+    justify-self: center;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .millan {
+    grid-area: foto3;
+    justify-self: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto3 {
+    grid-area: texto3;
+    justify-self: center;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+  .dallosso {
+    grid-area: foto4;
+    justify-self: center;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px; }
+  .texto4 {
+    grid-area: texto4;
+    justify-self: end;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #f7f7d7; }
+
    
-     th {
-        color: black;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 22px; }
+  .contacto h1{
+    color: black;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;}
    
-     td {
-         color: black;
-         border: solid 1px black;
-         font-family: 'Libre Franklin', sans-serif;
-         font-size: 17px; }
-   
-     .contacto h1{
-       color: black;
-       font-size: 17px;
-       font-family: 'Montserrat', sans-serif;
-     }
-   
-      form{
-        color: black;
-        width: 200px;
-        height: 300px;
-        border: 1px solid black;
-        padding-bottom: 100px;
-        padding-left: 15px;
-        margin-left: 15px;
-        margin-top: 15px;
-    }
+  form{
+    color: black;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 15px;}
 }
 
 /*PIE DE PÁGINA*/
@@ -551,18 +441,7 @@ nav{
 main{
     height: 100%; 
 
-    .listaNoordenada li {
-        justify-content: center;
-        color: black;
-        list-style-type: circle;
-        margin: 0px;
-        padding: 10px;
-        align-items: center;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 15px;
-        color: black; }
-
-    #urologos {
+  #urologos {
     display: grid;
     /* 2 columnas */
     grid-template-columns: 250px 250px;
@@ -629,132 +508,118 @@ main{
     color: black;
     background-color: #f7f7d7; }
 
-    #galeriaInicio{
-        display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto4";
-        background-color: rgb(247, 247, 215);
-        grid-column-gap: 15px;
-        grid-row-gap:15px;
-        justify-content: space-evenly;
-        
-    }
+  #maquinadeLitotricia{
+    display: grid;
+    /* 2 columnas */
+    grid-template-columns: 250px 250px;
+    /* 4 filas */
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "foto1 foto2"
+                         "infoUno infoDos"
+                         "foto3 foto4"
+                         "infoTres infoCuatro";
+    background-color: white;
+    grid-row-gap: 15px;
+    grid-column-gap:15px; 
+    justify-content: space-evenly; 
+  }
 
-    #fotoUnogaleria{
-        grid-area: foto1;
-        width: 250px;
-    }
+  .litotricia1 {
+    grid-area: foto1;
+    justify-self: center;
+    padding-top: 50px;
+    border-radius: 5px;
+    width: 300px; 
+    height: 250px;
+  }
+  .infoUno{
+    grid-area: infoUno;
+    justify-self: center;
+    margin-top: 15%;
+    height: 130px;
+    color: black;
+    background-color: #14a133;
+  }
+  .litotricia2 {
+    grid-area: foto2;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 300px; 
+    height: 250px;
+  }
+  .infoDos{
+    grid-area: infoDos;
+    margin-top: 15%;
+    height: 55px;
+    color: black;
+    background-color: #14a133;
+  }
+  .litotricia3 {
+    grid-area: foto3;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 300px; 
+    height: 250px;
+  }
+  .infoTres{
+    grid-area: infoTres;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #14a133;
+  }
+  .litotricia4 {
+    grid-area: foto4;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 300px; 
+    height: 250px;
+  }
+  .infoCuatro{
+    grid-area: infoCuatro;
+    margin-top: 55px;
+    height: 55px;
+    color: black;
+    background-color: #14a133;
 
-    #fotoDosgaleria{
-        grid-area: foto2;
-        width: 250px;
+    form{
+      color: black;
+      width: 200px;
+      height: 300px;
+      border: 1px solid black;
+      padding-bottom: 100px;
+      padding-left: 15px;
+      margin-left: 15px;
+      margin-top: 15px;
     }
-
-    #fotoTresgaleria{
-        grid-area: foto3;
-        width: 250px;
-    }
-
-    #fotoCuatrogaleria{
-        grid-area: foto4;
-        width: 250px;
-    }
-
-    #maquinadeLitotricia{
-        display: grid;
-        /* 2 columnas */
-        grid-template-columns: 250px 250px;
-        /* 3 filas */
-        grid-template-rows: repeat(5, 250px);
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto4"
-                             "foto5";
-        background-color: white;
-        grid-row-gap: 15px;
-        grid-column-gap:15px; 
-        justify-content: space-evenly; 
-      }
-    
-      .litotricia1 {
-        grid-area: foto1;
-        padding-top: 20px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia2 {
-        grid-area: foto2;
-        margin-top: 5px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia3 {
-        grid-area: foto3;
-        margin-top: 5px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia4 {
-        grid-area: foto4;
-        margin-top: 5px;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-      .litotricia5 {
-        grid-area: foto5;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        width: 300px; 
-        height: 250px;
-      }
-
-      form{
-        color: black;
-        width: 200px;
-        height: 300px;
-        border: 1px solid black;
-        padding-bottom: 100px;
-        padding-left: 15px;
-        margin-left: 15px;
-        margin-top: 15px;
-    }
-
-    table{
-        background-color: wheat;
-        text-align: left;
-        border-collapse: collapse;
-    }
-    
-    th{
-        color:black;
-        font-family:'Libre Franklin', sans-serif;
-        font-size: 22px;
-    }
-    
-    td{
-        color: black;
-        border: solid 1px black;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 17px;
-    }
-    
+}
 }
 
 /*PIE DE PÁGINA*/
 
-.piedepagina{
-    display: flex;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 23px;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    background-color: rgb(77, 74, 74);
+footer{
+  width: 100%;
+  height: auto;
+  background-color: rgb(253, 243, 243);
+
+
+    .container__redes{
+       display: flex;
+       justify-content: center;
+       flex-wrap: nowrap;
+       align-items: center;
+       background-color: #706e6e; 
+}
+
+    .container__redes a img{
+       width: 32px;
+       height: auto;
+       margin: 15px 15px; }
+
+    .container__redes a img hover {
+       opacity: 25%;
+       transition: all 0.2s ease; 
+}
 }
 }
