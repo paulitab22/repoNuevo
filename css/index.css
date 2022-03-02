@@ -8,19 +8,13 @@ header {
   background-color: white;
   margin-bottom: 0px; }
 
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 200%;
-  padding-top: 27px;
-  color: black;
-  text-align: left; }
-
-.nombreUno{
-  color: black !important;
+.logo h1{
+  color: rgb(114, 112, 112);
+  font-family: 'News Cycle', sans-serif;
 }
 
-.nombreUno hover{
-  color: rgb(75, 73, 73) !important;
+.nombreUno:hover{
+  color: wrgb(112, 116, 112) !important
 }
 
 a {
@@ -41,7 +35,7 @@ p {
 
     /*CARROUSEL*/
 
-.carousel.item{
+.carousel-caption d-none d-md-block{
   display:flex;
   height: 200px;
   }
@@ -50,40 +44,51 @@ p {
   padding-left: 50px;
   padding-right: 50px;
   }
-  
-.corousel-button button-1{
-  margin-top:30px;
-  background-color: rgb(8, 153, 45);
-  color: white;
-  border-radius: 5px;
-  font-family: 'Work Sans', sans-serif;
-  margin-right: 15px;
-  }
-  
-.corousel-button button-2{
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  font-family: 'Work Sans', sans-serif;
-  }
-  
+   
 .d-block img{
   width: 100%;
   }
 
-.title-1{
-  align-items: flex-start;
-  color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 30px;
-}
+     /*INFORMACIÓN DE INICIO*/
 
-.parrafo-1{
-  align-items: flex-start;
-  color: black;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 10px;
-}
+ .about {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; }
+  
+  .about hr {
+    color: #000000;
+    width: 10%;
+    height: 2px;
+    align-self: center; }
+
+  .about__info {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+  .about__foto {
+    color: #6e6e6e;
+    font-size: 24px;
+    padding-top: 10px;
+    width: 25%; }
+
+  .about__title {
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    align-self: center;
+    padding-top: 40px; }
+
+  .about__img img {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px; }
 
     /*INFORMACIÓN DE PRÁCTICAS REALIZADAS*/ 
 
@@ -92,7 +97,7 @@ p {
   background: white;
   flex-direction: column;
   align-items: center;
-  padding: 150px 10px; }
+  padding: 150px 10px; }      
 
 .practicas hr {
   color: #222424;
@@ -100,8 +105,8 @@ p {
   height: 2px;
   margin-bottom: 100px; }
 
-.practicas-title{
-  color: black;
+.practicas__title{
+  color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 40px;
   align-self: center; }
@@ -113,6 +118,7 @@ p {
   width: 100%; }
 
 .practicas__card{
+  margin-top: 15px;
   width: 30%;
   background: white;
   box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
@@ -199,15 +205,9 @@ h2 {
     align-self: center; 
 }
 
-form {
-  color: black;
-  width: 200px;
-  height: 300px;
-  border: 1px solid black;
-  padding-bottom: 100px;
-  padding-left: 15px;
-  margin-left: 15px;
-  margin-top: 15px; }
+    /*CONTACTO*/
+
+
 
 footer{
   width: 100%;
@@ -228,11 +228,10 @@ footer{
   height: auto;
   margin: 15px 15px; }
 
-.container__redes a img hover {
+.container__redes a img:hover {
   opacity: 25%;
   transition: all 0.2s ease; 
 }
-
 
 
 /*Mobile Styles*/
@@ -270,15 +269,80 @@ footer{
     align-items: center;
     height: 20%;
     width: 100%; }
-
-  .nombreUno{
-      color: black !important;}
     
-  .nombreUno hover{
-      color: black !important;}
+  .nombreUno:hover{
+      color: rgb(221, 36, 36) !important;}
 
   main {
     height: 100%; }
+
+    /*CARROUSEL*/
+
+  .carousel.item{
+    display:flex;
+    height: 200px;
+  }
+  
+  .carousel-caption{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+    /*INFORMACIÓN DE INICIO*/
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px; }
+  
+  .about hr {
+    color: #000000;
+    width: 10%;
+    height: 2px;
+    align-self: center; }
+
+  .info__principal {
+    flex-direction: row;
+    flex-wrap:wrap;
+    color: black;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center; }
+
+  .info__principal .container__uno{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;}
+  
+  .info__principal .container__uno p{
+    width: 50%;
+    height: 43%;
+    text-align: justify;
+    font-weight: 300;
+  }
+  .about__title {
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    align-self: center;
+    padding-top: 40px; }
+
+  .about__imagen {
+    width: 80%;
+    height: 300px;
+   }
+
+  .about__imagen img {
+    width: 100%;
+    height: 100%;
+    align-content:flex-start;
+    object-fit: cover; }
 
 
     /*INFORMACIÓN DE PRÁCTICAS REALIZADAS*/ 
@@ -287,10 +351,12 @@ footer{
   display: flex;
   background: white;
   flex-direction: column;
-  align-items: center; }
+  align-items: center; 
+  padding: 150px 10px;
+}
 
 .practicas hr {
-  color: #198f89;
+  color: #1e2020;
   width: 15%;
   height: 2px;
   margin-bottom: 100px; }
@@ -339,6 +405,14 @@ footer{
   align-items: center;
   justify-content: end;
   padding: 20px; }
+
+.practicas__card__margin{
+  margin-top: 10px;
+  width: 30%;
+  background: white;
+  box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
+  transition: 2s;
+}
 
   #urologos {
     display: grid;
@@ -525,6 +599,16 @@ footer{
 /*Pantalla de escritorio Styles*/
 @media only screen and (min-width: 1200px) {
 
+  .practicas__card{
+    width: 30%;
+    background: white;
+    box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
+    transition: 2s; }
+  
+  .practicas__card:hover{
+    transform: scale(1.05);}
+
+
   nav {
     display: flex;
     height: 200px;
@@ -710,4 +794,3 @@ footer{
   }
    
     }
-  
