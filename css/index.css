@@ -14,7 +14,7 @@ header {
 }
 
 .nombreUno:hover{
-  color: wrgb(112, 116, 112) !important
+  color: rgb(125, 134, 127) !important
 }
 
 a {
@@ -90,6 +90,26 @@ p {
     height: 300px;
     margin-top: 15px; }
 
+
+    /*INFORMACIÓN UROLOGOS */
+
+.title-nosotros, .title-contacto, .title-tecnologias{
+    color: black;
+    font-size: 50px;
+    align-self: center; 
+  }
+
+.persona{
+  height: 15em;
+  width: 15em;
+}
+
+.fondo{
+  border-bottom: 1px solid #555a;
+  margin-top: 3rem;
+}
+
+
     /*INFORMACIÓN DE PRÁCTICAS REALIZADAS*/ 
 
 .practicas{
@@ -118,7 +138,8 @@ p {
   width: 100%; }
 
 .practicas__card{
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 30%;
   background: white;
   box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
@@ -187,11 +208,6 @@ h2 {
   padding-top: 27px;
   text-align: center; }
 
-.title-nosotros, .title-contacto, .title-tecnologias{
-    color: black;
-    font-size: 40px;
-    align-self: center; 
-  }
 
 .title-contacto{
     color: black;
@@ -204,11 +220,6 @@ h2 {
     font-size: 40px;
     align-self: center; 
 }
-
-    /*CONTACTO*/
-
-
-
 footer{
   width: 100%;
   height: auto;
@@ -231,6 +242,28 @@ footer{
 .container__redes a img:hover {
   opacity: 25%;
   transition: all 0.2s ease; 
+}
+
+  /*CONTACTO*/
+
+.container my-5{
+  display: flex;
+}
+
+.imagen-contacto{
+  justify-self: center;
+  margin-top: 10%;
+  margin-right: 100px;
+  width: 100%;
+
+}
+
+.copy__derechos{
+  font-size: 12px;
+}
+
+.text-decoration-none{
+  font-size: 12px;
 }
 
 
@@ -271,7 +304,7 @@ footer{
     width: 100%; }
     
   .nombreUno:hover{
-      color: rgb(221, 36, 36) !important;}
+      color: rgb(125, 134, 127) !important;}
 
   main {
     height: 100%; }
@@ -344,7 +377,6 @@ footer{
     align-content:flex-start;
     object-fit: cover; }
 
-
     /*INFORMACIÓN DE PRÁCTICAS REALIZADAS*/ 
 
 .practicas{
@@ -414,84 +446,19 @@ footer{
   transition: 2s;
 }
 
-  #urologos {
-    display: grid;
-    /* 1 columna */
-    grid-template-columns: 580px;
-    /* 8 filas */
-    grid-template-rows: repeat(8, 250px);
-    grid-template-areas: "foto1"
-                         "texto1"
-                         "foto2"
-                         "texto2"
-                         "foto3" 
-                         "texto3"
-                         "foto4"
-                         "texto4";
-    background-color: white;
-    grid-row-gap: 10px; 
-    justify-content: space-evenly;}
-
-  .barbieri {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 20px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto1 {
-    grid-area: texto1;
-    justify-self: center;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .benitez {
-    grid-area: foto2;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto2 {
-    grid-area: texto2;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .millan {
-    grid-area: foto3;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto3 {
-    grid-area: texto3;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .dallosso {
-    grid-area: foto4;
-    justify-self: center;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto4 {
-    grid-area: texto4;
-    justify-self: end;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-
   .contacto h1{
     color: black;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
   }
+
+  /*INFORMACIÓN UROLOGOS */
+
+.persona{
+  height: 15em;
+  width: 15em;
+  
+}
 
   #maquinadeLitotricia{
     display: grid;
@@ -584,15 +551,11 @@ footer{
     background-color: #14a133;
   }
 
-  form {
-    color: black;
-    width: 200px;
-    height: 300px;
-    border: 1px solid black;
-    padding-bottom: 100px;
-    padding-left: 15px;
-    margin-left: 15px;
-    margin-top: 15px; }
+  /*CONTACTO*/
+
+.ley{
+  font-size: 12px;
+}
 
 }
 
@@ -644,73 +607,6 @@ footer{
       color: black !important;}
   .nombreUno hover{
       color: rgb(75, 73, 73) !important;}
-
-  #urologos {
-    display: grid;
-    /* 2 columnas */
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px 250px 250px;
-    /* 4 filas */
-    grid-template-rows: repeat(4, 250px);
-    grid-template-areas: "foto1 foto2"
-                         "texto1 texto2"
-                         "foto3  foto4" 
-                         "texto3 texto4";
-    background-color: white;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px; 
-    justify-content: space-evenly;}
-    
-  .barbieri {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 50px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto1 {
-    grid-area: texto1;
-    justify-self: center;
-    margin-top: 15%;
-    height: 160px;
-    color: black;
-    background-color: #f7f7d7; }
-  .benitez {
-    grid-area: foto2;
-    justify-self: center;
-    padding-top: 50px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto2 {
-    grid-area: texto2;
-    margin-top: 15%;
-    height: 160px;
-    color: black;
-    background-color: #f7f7d7; }
-  .millan {
-    grid-area: foto3;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto3 {
-    grid-area: texto3;
-    margin-top: 55px;
-    height: 160px;
-    color: black;
-    background-color: #f7f7d7; }
-  .dallosso {
-    grid-area: foto4;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto4 {
-    grid-area: texto4;
-    margin-top: 55px;
-    height: 160px;
-    color: black;
-    background-color: #f7f7d7; }
 
   .contacto h1{
     color: black;
@@ -794,3 +690,4 @@ footer{
   }
    
     }
+  
