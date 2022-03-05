@@ -93,7 +93,7 @@ p {
 
     /*INFORMACIÓN UROLOGOS */
 
-.title-nosotros, .title-contacto, .title-tecnologias{
+.nosotros, .title-contacto, .title-tecnologias{
     color: black;
     font-size: 50px;
     align-self: center; 
@@ -198,7 +198,7 @@ p {
 main {
   background-color: white;
   height: 100%;
-  width: 100%; }
+  width: auto; }
 
 h2 {
   color: black;
@@ -244,6 +244,30 @@ footer{
   transition: all 0.2s ease; 
 }
 
+  /*INFORMACIÓN TECNOLOGÍAS*/
+
+  .list__beneficios{
+    width: 100%;
+    height: 400px;
+   }
+   
+   .beneficios__p{
+     font-family: 'Inter', sans-serif;
+     font-size: 25px;
+     margin-left: 10px;
+   }
+   
+   .list__beneficios ul{
+     display: block;
+     list-style-type: disc;
+     list-style-position: inside;
+     padding: 15px;
+   }
+   
+   li{
+     color: rgb(0, 0, 0);
+   }
+   
   /*CONTACTO*/
 
 .container my-5{
@@ -307,7 +331,8 @@ footer{
       color: rgb(125, 134, 127) !important;}
 
   main {
-    height: 100%; }
+    height: 100%; 
+    width: auto;}
 
     /*CARROUSEL*/
 
@@ -463,6 +488,9 @@ footer{
   
 }
 
+  /*INFORMACIÓN TECNOLOGÍAS*/
+
+
   #maquinadeLitotricia{
     display: grid;
     /* 1 columna */
@@ -486,10 +514,7 @@ footer{
   .litotricia1 {
     grid-area: foto1;
     justify-self: center;
-    padding-top: 10px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
 
   .infoUno{
@@ -500,18 +525,17 @@ footer{
     color: black;
   }
   .litotricia2 {
+    margin-top: auto;
     grid-area: foto2;
     justify-self: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
 
   .infoDos{
     grid-area: infoDos;
     justify-self: center;
-    margin-top: 55px;
+    margin-top: 30%;
     height: 55px;
     color: black;
   }
@@ -521,14 +545,12 @@ footer{
     justify-self: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
 
   .infoTres{
     grid-area: infoTres;
     justify-self: center;
-    margin-top: 55px;
+    margin-top: 30%;
     height: 55px;
     color: black;
   }
@@ -538,21 +560,16 @@ footer{
     justify-self: center;
     padding-bottom: 15px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
   
   .infoCuatro{
     grid-area: infoCuatro;
     justify-self:center;
-    margin-top: 55px;
+    margin-top: 30%;
     height: 55px;
     color: black;
 
   }
-
-
-  /*INFORMACIÓN TECNOLOGÍAS*/
 
  .about-tecnologia {
     flex-direction: row;
@@ -661,15 +678,13 @@ footer{
   .litotricia1 {
     grid-area: foto1;
     justify-self: center;
-    padding-top: 50px;
+    padding-top: 15px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
   .infoUno{
     grid-area: infoUno;
     justify-self: center;
-    margin-top: 15%;
+    margin-top: 1%;
     height: 130px;
     color: black;
   }
@@ -678,12 +693,10 @@ footer{
     justify-self: center;
     margin-top: 50px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
   .infoDos{
     grid-area: infoDos;
-    margin-top: 15%;
+    margin-top: 50%;
     height: 55px;
     color: black;
 
@@ -692,31 +705,25 @@ footer{
     grid-area: foto3;
     margin-top: 5px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
+
   }
   .infoTres{
     grid-area: infoTres;
-    margin-top: 55px;
+    margin-top: 10%;
     height: 55px;
     color: black;
-    
   }
   .litotricia4 {
     grid-area: foto4;
     padding-bottom: 15px;
     border-radius: 5px;
-    width: 300px; 
-    height: 250px;
   }
   .infoCuatro{
     grid-area: infoCuatro;
-    margin-top: 55px;
+    margin-top: 10%;
     height: 55px;
     color: black;
     
   }
    
     }
-  
-
