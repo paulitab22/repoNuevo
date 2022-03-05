@@ -515,6 +515,7 @@ footer{
     grid-area: foto1;
     justify-self: center;
     border-radius: 5px;
+    margin-top: 15px;
   }
 
   .infoUno{
