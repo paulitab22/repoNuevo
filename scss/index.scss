@@ -4,7 +4,6 @@
 @import "nav.scss";
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -55,39 +54,10 @@ img{
         padding-right: 50px;
   }
   
-    .corousel-button button-1{
-        margin-top:30px;
-        background-color: rgb(8, 153, 45);
-        color: white;
-        border-radius: 5px;
-        font-family: 'Work Sans', sans-serif;
-        margin-right: 15px;
-  }
-  
-    .corousel-button button-2{
-         background-color: white;
-         color: black;
-         border-radius: 5px;
-         font-family: 'Work Sans', sans-serif;
-  }
-  
+ 
     .d-block img{
         width: 100px;
   }
-
-    .title-1{
-        align-items: flex-start;
-        color: black;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 30px;
-}
-
-    .parrafo-1{
-        align-items: flex-start;
-        color: black;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 10px;
-}  
 }
     
 
@@ -104,16 +74,6 @@ main{
         padding-top: 27px;
         text-align: center; 
     }
-    
-    form{
-        color: black;
-        width: 200px;
-        height: 300px;
-        border: 1px solid black;
-        padding-bottom: 100px;
-        padding-left: 15px;
-        margin-left: 15px;
-        margin-top: 15px;}
 }
 
 
@@ -127,7 +87,7 @@ main{
 }
   
 footer{
-  @include infodelFooter( 50px , 150% , green); 
+  @include infodelFooter( 50px , 150% , rgb(253, 243, 243)); 
 }
 
   .container__redes{
@@ -137,7 +97,6 @@ footer{
       align-items: center;
       background-color: #706e6e; 
 }
-
     .container__redes a img{
       width: 32px;
       height: auto;
@@ -147,7 +106,7 @@ footer{
       opacity: 25%;
       transition: all 0.2s ease; 
 }
-}
+
 
 
 
@@ -167,13 +126,13 @@ nav{
     border-right: solid 2px gray;
     border-bottom: solid 2px gray;
     border-left: solid 2px gray;
-    background-color: rgb(247, 247, 215); 
+    background-color: #f7f7d7; 
     color: black;
     
     &bar{
         width: 100%;
         height: 100%;
-        background-color: rgb(247, 247, 215);
+        background-color: #f7f7d7;
         display: flex;
         justify-content: center;
     }
@@ -204,167 +163,12 @@ nav{
 main{
     height: 100%;
 
-    #urologos {
-    display: grid;
-    /* 1 columna */
-    grid-template-columns: 580px;
-    /* 8 filas */
-    grid-template-rows: repeat(8, 250px);
-    grid-template-areas: "foto1"
-                         "texto1"
-                         "foto2"
-                         "texto2"
-                         "foto3" 
-                         "texto3"
-                         "foto4"
-                         "texto4";
-    background-color: white;
-    grid-row-gap: 10px; 
-    justify-content: space-evenly;}
-
-  .barbieri {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 20px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto1 {
-    grid-area: texto1;
-    justify-self: center;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .benitez {
-    grid-area: foto2;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto2 {
-    grid-area: texto2;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .millan {
-    grid-area: foto3;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto3 {
-    grid-area: texto3;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .dallosso {
-    grid-area: foto4;
-    justify-self: center;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto4 {
-    grid-area: texto4;
-    justify-self: end;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
     
-   #urologos {
-    display: grid;
-    /* 1 columna */
-    grid-template-columns: 580px;
-    /* 8 filas */
-    grid-template-rows: repeat(8, 250px);
-    grid-template-areas: "foto1"
-                         "texto1"
-                         "foto2"
-                         "texto2"
-                         "foto3" 
-                         "texto3"
-                         "foto4"
-                         "texto4";
-    background-color: white;
-    grid-row-gap: 10px; 
-    justify-content: space-evenly;}
-
-  .barbieri {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 20px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto1 {
-    grid-area: texto1;
-    justify-self: center;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .benitez {
-    grid-area: foto2;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto2 {
-    grid-area: texto2;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .millan {
-    grid-area: foto3;
-    justify-self: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto3 {
-    grid-area: texto3;
-    justify-self: center;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .dallosso {
-    grid-area: foto4;
-    justify-self: center;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 300px;
-    height: 250px; }
-  .texto4 {
-    grid-area: texto4;
-    justify-self: end;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-
-   
   .contacto h1{
     color: black;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;}
-   
-  form{
-    color: black;
-    width: 200px;
-    height: 300px;
-    border: 1px solid black;
-    padding-bottom: 100px;
-    padding-left: 15px;
-    margin-left: 15px;
-    margin-top: 15px;}
+ 
 }
 
 /*PIE DE PÁGINA*/
@@ -440,160 +244,8 @@ nav{
 
 main{
     height: 100%; 
+    width: auto;
 
-  #urologos {
-    display: grid;
-    /* 2 columnas */
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px 250px 250px;
-    /* 4 filas */
-    grid-template-rows: repeat(4, 250px);
-    grid-template-areas: "foto1 foto2"
-                         "texto1 texto2"
-                         "foto3  foto4" 
-                         "texto3 texto4";
-    background-color: white;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px; 
-    justify-content: space-evenly;}
-    
-  .barbieri {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 50px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto1 {
-    grid-area: texto1;
-    justify-self: center;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .benitez {
-    grid-area: foto2;
-    justify-self: center;
-    padding-top: 50px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto2 {
-    grid-area: texto2;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .millan {
-    grid-area: foto3;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto3 {
-    grid-area: texto3;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-  .dallosso {
-    grid-area: foto4;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px; }
-  .texto4 {
-    grid-area: texto4;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #f7f7d7; }
-
-  #maquinadeLitotricia{
-    display: grid;
-    /* 2 columnas */
-    grid-template-columns: 250px 250px;
-    /* 4 filas */
-    grid-template-rows: repeat(4, 250px);
-    grid-template-areas: "foto1 foto2"
-                         "infoUno infoDos"
-                         "foto3 foto4"
-                         "infoTres infoCuatro";
-    background-color: white;
-    grid-row-gap: 15px;
-    grid-column-gap:15px; 
-    justify-content: space-evenly; 
-  }
-
-  .litotricia1 {
-    grid-area: foto1;
-    justify-self: center;
-    padding-top: 50px;
-    border-radius: 5px;
-    width: 300px; 
-    height: 250px;
-  }
-  .infoUno{
-    grid-area: infoUno;
-    justify-self: center;
-    margin-top: 15%;
-    height: 130px;
-    color: black;
-    background-color: #14a133;
-  }
-  .litotricia2 {
-    grid-area: foto2;
-    justify-self: center;
-    margin-top: 50px;
-    border-radius: 5px;
-    width: 300px; 
-    height: 250px;
-  }
-  .infoDos{
-    grid-area: infoDos;
-    margin-top: 15%;
-    height: 55px;
-    color: black;
-    background-color: #14a133;
-  }
-  .litotricia3 {
-    grid-area: foto3;
-    margin-top: 5px;
-    border-radius: 5px;
-    width: 300px; 
-    height: 250px;
-  }
-  .infoTres{
-    grid-area: infoTres;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #14a133;
-  }
-  .litotricia4 {
-    grid-area: foto4;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    width: 300px; 
-    height: 250px;
-  }
-  .infoCuatro{
-    grid-area: infoCuatro;
-    margin-top: 55px;
-    height: 55px;
-    color: black;
-    background-color: #14a133;
-
-    form{
-      color: black;
-      width: 200px;
-      height: 300px;
-      border: 1px solid black;
-      padding-bottom: 100px;
-      padding-left: 15px;
-      margin-left: 15px;
-      margin-top: 15px;
-    }
-}
 }
 
 /*PIE DE PÁGINA*/
@@ -623,3 +275,4 @@ footer{
 }
 }
 }
+
