@@ -10,7 +10,7 @@
     padding: 150px 10px; 
   
         & hr {
-             color: #198f89;
+             color: #494b4b;
              width: 15%;
              height: 2px;
              margin-bottom: 100px; }
@@ -97,7 +97,25 @@ img{
         padding: 5px;
     }
 
-/*CARROUSEL*/
+    /*INFORMACIÓN UROLOGOS */
+
+.nosotros, .title-contacto, .title-tecnologias{
+    color: black;
+    font-size: 50px;
+    align-self: center; 
+  }
+
+    .persona{
+      height: 15em;
+      width: 15em;
+}
+
+    .fondo{
+      border-bottom: 1px solid #555a;
+      margin-top: 3rem;
+}
+
+    /*CARROUSEL*/
 
     .carousel.item{
         display:flex;
@@ -107,22 +125,6 @@ img{
     .carousel-caption{
         padding-left: 50px;
         padding-right: 50px;
-  }
-  
-    .corousel-button button-1{
-        margin-top:30px;
-        background-color: rgb(8, 153, 45);
-        color: white;
-        border-radius: 5px;
-        font-family: 'Work Sans', sans-serif;
-        margin-right: 15px;
-  }
-  
-    .corousel-button button-2{
-         background-color: white;
-         color: black;
-         border-radius: 5px;
-         font-family: 'Work Sans', sans-serif;
   }
   
     .d-block img{
@@ -148,7 +150,7 @@ img{
 main{
     background-color: white;
     height: 100%;
-    width: 100%;
+    width: auto;
 
     h2{
         color: black;
@@ -183,16 +185,97 @@ main{
         font-family: 'Libre Franklin', sans-serif;
         color: black;
         font-size: 17px;
-    }
-    
-    form{
-        color: black;
-        width: 200px;
-        height: 300px;
-        border: 1px solid black;
-        padding-bottom: 100px;
-        padding-left: 15px;
-        margin-left: 15px;
-        margin-top: 15px;}
-    
+    } 
+}
+
+  /*INFORMACIÓN TECNOLOGÍAS*/
+
+#maquinadeLitotricia{
+    display: grid;
+    /* 2 columnas */
+    grid-template-columns: 250px 250px;
+    /* 4 filas */
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "foto1 foto2"
+                         "infoUno infoDos"
+                         "foto3 foto4"
+                         "infoTres infoCuatro";
+    background-color: white;
+    grid-row-gap: 15px;
+    grid-column-gap:15px; 
+    justify-content: space-evenly; 
+  }
+
+  .litotricia1 {
+    grid-area: foto1;
+    justify-self: center;
+    padding-top: 15px;
+    border-radius: 5px;
+  }
+  .infoUno{
+    grid-area: infoUno;
+    justify-self: center;
+    margin-top: 1%;
+    height: 130px;
+    color: black;
+  }
+  .litotricia2 {
+    grid-area: foto2;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+  .infoDos{
+    grid-area: infoDos;
+    margin-top: 50%;
+    height: 55px;
+    color: black;
+
+  }
+  .litotricia3 {
+    grid-area: foto3;
+    margin-top: 5px;
+    border-radius: 5px;
+
+  }
+  .infoTres{
+    grid-area: infoTres;
+    margin-top: 10%;
+    height: 55px;
+    color: black;
+  }
+  .litotricia4 {
+    grid-area: foto4;
+    padding-bottom: 15px;
+    border-radius: 5px;
+  }
+  .infoCuatro{
+    grid-area: infoCuatro;
+    margin-top: 10%;
+    height: 55px;
+    color: black;
+ .about-tecnologia {
+    flex-direction: row;
+    flex-wrap:wrap;
+    color: black;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center; }
+
+  .about-tecnologia .container__cuatro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;}
+  
+  .about-tecnologia .container__cuatro p{
+    width: 50%;
+    height: 43%;
+    text-align: justify;
+    font-weight: 300;
+}
 }
