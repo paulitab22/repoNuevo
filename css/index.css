@@ -8,6 +8,11 @@ header {
   background-color: white;
   margin-bottom: 0px; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .logo h1{
   color: rgb(114, 112, 112);
   font-family: 'News Cycle', sans-serif;
