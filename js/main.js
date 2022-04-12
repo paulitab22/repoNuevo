@@ -108,6 +108,7 @@ let servicioElegido = parseInt(
       alert("el numero ingresado no es correcto");
   }
 
+// El usuario elige el mes en que quiere la cita con el medico
 var cantDiasDelMes = 0;
 
 const mesDeCita = prompt(` 
